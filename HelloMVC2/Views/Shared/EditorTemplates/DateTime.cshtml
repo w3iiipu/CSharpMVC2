@@ -1,0 +1,4 @@
+﻿@model DateTime ? 
+@Html.TextBox("", Model.HasValue ? Model.Value.ToString("dd/MM/yyyy") : "", new { @class = "date" })
+
+@*For date time format http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx*@
